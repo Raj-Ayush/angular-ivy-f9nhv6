@@ -1,0 +1,46 @@
+<!-- In the given Url there is a form created. 
+The task is you need to validate this form
+by using Angular forms module. It is mention that all the validation 
+is mention in the code. you need write the logic so, that the validation 
+message should be shown and submit button should be enable when the form 
+is valid -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="name"
+              class="form-control"
+              id="name"
+              aria-describedby="name"
+            />
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="email"
+            />
+            <small *ngIf="false"> Email address is not valid! </small>
+          </div>
+          <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="Password" />
+            <small class="password-note"
+              >Password should be combination of letters, symbol and numbers.
+              Password should not contain name which you entered in name
+              box!</small
+            >
+          </div>
+          <button type="submit" class="btn btn-primary" disabled="true">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
